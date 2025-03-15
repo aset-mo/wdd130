@@ -22,7 +22,7 @@ img {
 }
 
 p {
-    padding: 0px;
+    padding: 0;
 }
 
 main {
@@ -44,7 +44,7 @@ aside img {
 }
 
 main img {
-    width: 150xp;
+    width: 150px;
     height: auto;
     
 }
