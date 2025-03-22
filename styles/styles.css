@@ -32,7 +32,8 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(241, 12, 12, 0.2); /* 1️⃣ */
+    border: 1px solid rgba(241, 12, 12, 0.2);
+    /* 1️⃣ */
     background-color: #91165ac4;
     color: #ffebcd;
     text-align: center;
@@ -46,7 +47,7 @@ aside img {
 main img {
     width: 150px;
     height: auto;
-    
+
 }
 
 footer {

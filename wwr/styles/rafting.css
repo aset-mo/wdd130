@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #1e3d56;
+    --secondary-color: #396da6;
+    --accent-color: #fdf5e8;
+    --text-color: #333333;
+    --background-color: #f2fcfd;
+    --font-primary: 'Federo', sans-serif;
+    --font-secondary: 'Libre Caslon Text', serif;
+}
+
+/* General Styles */
+body {
+    font-family: var(--font-secondary);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: var(--font-primary);
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+/* Social Media Links Styling */
+.sociallinks a {
+    text-decoration: none;
+}
+
+/* Hero Section Styling */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Improved readability */
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly more contrast */
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px; /* Makes it more responsive */
+    width: 90%;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 15px;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
