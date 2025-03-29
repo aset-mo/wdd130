@@ -1,9 +1,9 @@
 :root {
     --primary-color: #1e3d56;
-    --secondary-color: #396da6;
-    --accent-color: #fdf5e8;
-    --text-color: #333333;
-    --background-color: #f2fcfd;
+    --secondary-color: #6594c4;
+    --accent-color: #f8eedd;
+    --text-color: #030f36;
+    --background-color: #e8fafc;
     --font-primary: 'Federo', sans-serif;
     --font-secondary: 'Libre Caslon Text', serif;
 }
@@ -29,12 +29,35 @@ p {
     color: var(--text-color);
 }
 
-/* Social Media Links Styling */
-.sociallinks a {
-    text-decoration: none;
+/* Header Layout */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 10px;
 }
 
-/* Hero Section Styling */
+header img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #501111;
+    font-weight: bold;
+}
+
+/* Hero Section */
 .hero {
     position: relative;
     text-align: center;
@@ -74,4 +97,74 @@ p {
     width: 100px;
     height: auto;
     border-radius: 50%;
+}
+
+/* History Section */
+.history {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Adventure Section */
+.adventure {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.adventure-gallery figure {
+    text-align: center;
+    width: 18%;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 15px;
+}
+
+.sociallinks a img {
+    width: 30px;
+    height: auto;
 }
