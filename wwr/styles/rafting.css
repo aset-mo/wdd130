@@ -1,6 +1,6 @@
 :root {
     --primary-color: #1e3d56;
-    --secondary-color: #6594c4;
+    --secondary-color: #aacbec;
     --accent-color: #f8eedd;
     --text-color: #030f36;
     --background-color: #e8fafc;
@@ -167,4 +167,207 @@ footer {
 .sociallinks a img {
     width: 30px;
     height: auto;
+}
+
+/* Contact Page Styling */
+
+/* Contact Info */
+.contact-info {
+    background-color: var(--accent-color);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Google Map */
+.map {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.team figure {
+    text-align: center;
+    max-width: 200px;
+}
+
+.team img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+}
+
+.team figcaption {
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.contact-form fieldset {
+    border: none;
+    padding: 10px 0;
+}
+
+.contact-form legend {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-grid figure {
+    text-align: center;
+    width: 200px;
+}
+
+.team-grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact-section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-form fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    width: auto;
+}
+
+.contact-form button {
+    background-color: #396da6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #2c5685;
 }
